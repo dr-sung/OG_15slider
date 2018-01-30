@@ -1,4 +1,5 @@
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.GridLayout;
@@ -44,8 +45,8 @@ public class SliderFrame extends JFrame {
         southPanel.add(blueSlider);
 
         Container contentPane = getContentPane();
-        contentPane.add(colorPanel, "Center");
-        contentPane.add(southPanel, "South");
+        contentPane.add(colorPanel, BorderLayout.CENTER);
+        contentPane.add(southPanel, BorderLayout.SOUTH);
 
         setSampleColor();
     }
